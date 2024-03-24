@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name and Addres form</title>
+    
+  </head>
+  <body>
+    <form action="confirmation.html" method="post"><fieldset>
+    <h4>Name and Address</h4>
+    <label for="check">Do you use CiviCRM?</label
+    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+      type="radio"
+      name="check" id="check"
+    /><label for="check">Yes</label><input type="radio" name="check" id="chek"/><label for="chek">No</label><a href="#">( unselect )</a>
+    <div>
+      <br />
+      <label for="select">How long have you been using <br />CiviCRM?</label
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="select">
+        <option value="--select------">---Select---</option>
+        <option value="One year">One year</option>
+        <option value="Two year">Two year</option>
+        <option value="More then two">More then Two Year</option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="selet">Which CMS do you Use?</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="selet">
+        <option value="--select------">---Select---</option>
+        <option value="Wordpress">Wordpress</option>
+        <option value="Shopify">Shopify</option>
+        <option value="Joomla">Joomla</option>
+        <option value="Magento">Magento</option>
+        <option value="Wix">Wix</option>
+        <option value="TYPPO3">TYPPO3</option>
+        <option value="Blogger">Blogger</option>
+        <option value="Squarespace">Squarespace</option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="skill">Your skill set</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="skill">
+        <option value="--select------">---Select---</option>
+        <option value="Creation and Management">Creation and Management</option>
+        <option value="theme/template">Theme/Template</option>
+        <option value="SEO optimization">SEO optimization</option>
+        <option value="security considerations">Security onsiderations</option>
+        <option value="plugin/module development">
+          Plugin/Module Development
+        </option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="email">Email*</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="email" name="email" id="email" required />
+    </div>
+    <br />
+    <div>
+      <label for="namefirst">First Name*</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="name" id="namefirst" required />
+    </div>
+    <br />
+    <div>
+      <label for="namelast">Last Name*</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="namelast" id="namelast" required />
+    </div>
+    <br />
+    <div>
+      <label for="street">Street Address (Home)</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;
+      <input type="text" name="street" id="street" required/>
+    </div>
+    <br />
+    <div>
+      <label for="city">City (Home)</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="city" id="city" required />
+    </div>
+    <br />
+    <div>
+      <label for="postal">Postal Code (Home)</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="postal" id="postal" />
+    </div>
+    <br />
+    <div>
+      <label for="country">Country (Home)</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;
+      <select id="country">
+        <option value="United States">United States</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="India">India</option>
+        <option value="Australia">Australia</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Bangal">Bangal</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Dubai">Dubai</option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="states">State (Home)</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="states" name="states">
+        <option label="---Select---"></option>
+        <optgroup label="United States">
+          <option value="california">California</option>
+          <option value="new_york">New York</option>
+          <option value="texas">Texas</option>
+          <!-- Add more states as needed -->
+        </optgroup>
+        <optgroup label="Canada">
+          <option value="ontario">Ontario</option>
+          <option value="quebec">Quebec</option>
+          <option value="british_columbia">British Columbia</option>
+        </optgroup>
+        <optgroup label="Pakistn">
+          <option value="Punjab">Punjab</option>
+          <option value="Sindh">Sindh</option>
+          <option value="Baluchistan">Baluchistan</option>
+        </optgroup>
+        <optgroup label="Other Countries">
+          <option value="united_kingdom">United Kingdom</option>
+          <option value="australia">Australia</option>
+          <option value="germany">Germany</option>
+          <!-- Add more countries as needed -->
+        </optgroup>
+      </select>
+    </div>
+    <br />
+    <div>
+      <label for="btn"></label>
+      <button type="submit">Save</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="btn"></label>
+      <button type="reset">Cancel</button>
+    </div>
+    </form></fieldset>
+  </body>
+</html>
